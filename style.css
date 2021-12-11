@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: url(bg.jpg);
+    background-repeat: none;
+    background-size: 1360px 660px;
+
+}
+
+.container{
+    margin: auto;
+    width: 500px;
+    height: fit-content;
+}
+
+h1{
+    margin-top: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #640000;
+}
+
+/* styling the input form and button */
+.input{
+    margin: 2rem 0 2rem 0;
+}
+
+.todoForm{
+    max-width: 100%;
+}
+
+#inputField{
+    width: 79%;
+    height: 1.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: maroon;
+    border: none;
+}
+
+#addTaskBtn{
+    width: 20%;
+    height: 1.5rem;
+    background-color: #5f1717a9;
+    border: none;
+}
+
+/* styling each item on the todo list and buttons */
+#todo-list{
+    width: 100%;
+}
+#todo-list, li{
+    list-style-type: none;
+}
+
+.todoItem:nth-child(odd){
+    background-color: #FFAB9A;
+}
+
+.todoItem:nth-child(even){
+    background-color: #d87460;
+}
+
+.todoItem{
+    color:rgb(1, 1, 110);
+    /* width: 100%; */
+    padding: 10px 10px 10px 10px;
+    font-family: cursive;
+}
+
+.todoItem:hover{
+    opacity: .7;
+}
+
+
+/* delete item */
+.deleteItem{
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    color: red;
+}
+
+.deleteItem:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+/* edit Item */
+.editItem{
+    float: right;
+    padding-right: 3px;
+    padding-left: 3px;
+    color: blueviolet;
+    margin-right: 2px;
+}
+
+.editItem:hover{
+    background-color: rgb(210, 183, 236);
+    cursor: pointer;
+}
+
+/* styling the form for editing task */
+.subtodoForm{
+    display: inline-flex;
+}
+
+/* input field for editing task */
+.editTaskField{
+    height: 1.5rem;
+    margin-right: 5px;
+    color: maroon;
+    border: none;
+}
+
+/* save after editting (button) */
+.addEditedTask{
+    padding-left: 3px;
+    padding-right: 3px;
+    color: black;
+    background-color: brown;
+    border: none;
+}
+
+.addEditedTask:hover{
+    /* background-color: rgb(210, 183, 236); */
+    color: white;
+    cursor: pointer;
+}
+
+
+/* sub task button */
+.subTaskBtn{
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+    margin: 1px 20px 0 0px;
+    color: green;
+    transition: 1s;
+}
+
+.subTaskBtn:hover{
+    cursor: pointer;
+    background-color: rgb(166, 247, 166);
+}
+
+/* styling the todo nested list */
+
+.subtodoList{
+    width: 80%;
+    margin: auto;
+}
+
+.subtodoBtn{
+    margin-left: 1rem;
+    padding: 0 3px 0 3px;
+    color: blueviolet;
+}
+
+.subtodoBtn:hover{
+    cursor: pointer;
+    background-color: rgb(210, 183, 236);
+    transition: 1s;
+}
+
+.delTodoBtn{
+    width: 20px;
+    text-align: center;
+    float: right;
+    color: red;
+}
+
+.delTodoBtn:hover{
+    cursor: pointer;
+    background-color: tomato;
+}
+
+.nestedList:nth-child(odd){
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(121, 24, 24, 0.219);
+}
+
+.nestedList:nth-child(even){
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(73, 23, 23, 0.151);
+}
+
+.nestedList:hover{
+    background-color: #501d1da9;
+}
