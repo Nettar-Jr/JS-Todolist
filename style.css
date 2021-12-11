@@ -14,7 +14,7 @@ body{
 
 .container{
     margin: auto;
-    width: 500px;
+    width: 100%;
     height: fit-content;
 }
 
@@ -27,15 +27,15 @@ h1{
 
 /* styling the input form and button */
 .input{
-    margin: 2rem 0 2rem 0;
+    margin-bottom: 10vh;
 }
-
-.todoForm{
-    max-width: 100%;
+.todoForm, .output{
+    width: 60%;
+    margin: auto;
 }
 
 #inputField{
-    width: 79%;
+    width: 75%;
     height: 1.5rem;
     padding-left: .5rem;
     padding-right: .5rem;
@@ -68,7 +68,6 @@ h1{
 
 .todoItem{
     color:rgb(1, 1, 110);
-    /* width: 100%; */
     padding: 10px 10px 10px 10px;
     font-family: cursive;
 }
@@ -195,4 +194,24 @@ h1{
 
 .nestedList:hover{
     background-color: #501d1da9;
+}
+
+@media only screen and (max-width: 900px){
+    .input{
+        margin-bottom: 5vh;
+    }
+    .todoForm, .output{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .input{
+        margin-bottom: 5vh;
+    }
+    .todoForm, .output{
+        width: 90%;
+        margin: auto;
+    }
 }

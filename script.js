@@ -1,6 +1,6 @@
 
-function addTask (){
-    
+function addTask(){
+
     //create list and buttons
     let todolist = document.getElementById('todo-list');
     let todoItem = document.createElement('li');
@@ -41,13 +41,12 @@ function addTask (){
     
     if(inputValue === ""){
         alert ('Please enter a task first.')
+        return;
     }
     else{
        
         todolist.append(todoItem);
         todoItem.insertAdjacentElement("beforeEnd", subtodoList);
-
-       return this.inputValue = "";
     }
     
     // Give unique Id to each item
